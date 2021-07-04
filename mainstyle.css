@@ -17,6 +17,7 @@
     --counter-color: #197163;
     --contrast-color: #FADCAC;
     --last-color:#158467;
+    --deep-color:#001d17;
 }
 * {
     padding: 0;
@@ -40,6 +41,7 @@ html {
     justify-content: space-between;
     opacity: 90%;
     background-color:var(--main-color);
+    
     z-index: 900;
 
 }
@@ -176,7 +178,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--last-color);
+    background-color: var(--deep-color);
     width: 100%;
 
 }
@@ -237,9 +239,10 @@ html {
     align-items: flex-start;
     flex-wrap: wrap;
     padding-top: 2%;
-    background-color: var(--counter-color);
+    background-color: var(--deep-color);
     color: var(--contrast-color);
     transition: all 1s ease 0s;padding-bottom: 3rem ;
+   
 }
 
 .qql, .product, .co {
@@ -342,21 +345,34 @@ html {
 
 .social{
     display: flex;
-    width: 20%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.scoaillink {
+    display: flex;
+    width: 100%;
     flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: center;
+    
+    
 }
 
 .bitem{
+    display: inline;
     font-family: var(--font-links);
     color: white;
     font-size: var(--big-font-size);
     margin: 0.2rem;
+    width: fit-content;
 }
 .arr{
     color: var(--contrast-color);
     font-family: dinpro, sans-serif;
+    text-align: center;
     margin: 1rem 0 1rem 0;
 }
 
@@ -369,57 +385,16 @@ html {
     }
 }
 
+.thelink {
+    text-decoration: none;
+    color: var(--contrast-color);
+}
+
+.thelink:hover{
+    color: white;
+}
 
 
 /* GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY */
 /* GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY */
 /* GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY */
-
-
-
-.cathead {
-    width: 100%;
-    height: 45vh;
-}
-
-.cathead img {
-    width: 100%;
-    height: 45vh;
-}
-
-.cathead span{
-    position: absolute;
-    /* width: 100%; */
-    top:20vh;
-    left: 0;
-    /* padding-left: 30%; */
-    font-size: var(--vvbig-font-size);
-    font-family: 'Zen Tokyo Zoo', cursive;
-}
-.galcontainer{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-.gall{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-}
-
-.gallimg {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 1px solid black;
-    padding: 0.5rem;
-    align-items: center;
-    transition: all 1s ease 0s;
-}
-
-.gallimg:hover{
-    border-color: var(--main-color);
-    color: var(--main-color);
-}

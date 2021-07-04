@@ -1,0 +1,102 @@
+:root {
+    --font-headings : 'Nanum Myeongjo', serif;
+    --font-links : 'Manrope', sans-serif;
+    --font-superheads: 'Zen Tokyo Zoo', cursive;
+    
+    --vvbig-font-size: 4rem;
+    --vbig-font-size: 3rem;
+    --big-font-size: 1.75rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size:1.125rem;
+    --bnormal-font-size: 2rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+    --main-color: #065446;
+    --counter-color: #197163;
+    --contrast-color: #FADCAC;
+    --last-color:#158467;
+    --deep-color:#001d17;
+}
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #001d17;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.collection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 5rem;
+}
+
+.collection img {
+width: 50%;
+height: 50%;
+box-shadow: 1px 2px 3px var(--deep-color);
+}
+
+.catlog {
+    display: grid;
+    width: 100%;
+    padding:2rem;
+    grid-template-columns: repeat(3,1fr);
+    gap:2rem;
+}
+
+.catimgs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    transition: all 0s ease 0s;
+    border: 1px solid var(--contrast-color) ;
+    justify-content: space-around;
+}
+
+.catimgs:hover {
+    background: whitesmoke;
+    
+}
+
+.catimgs:hover span {
+    color: black;
+}
+.catimgs span {
+    padding: 1rem;
+    transition: all 0s ease 0s;
+    color: var(--contrast-color);
+    font-size: var(--normal-font-size);
+}
+
+.catimg {
+    width: 80%;
+    height: 80%;
+}
+
+.catimg {
+    padding: 0.5rem;
+    border: 1px solid var(--deep-color);
+}
+
+@media screen and (max-width:767px){
+    .catlog{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:360px){
+    .catlog{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
