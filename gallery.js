@@ -38,6 +38,8 @@ catimgs.forEach(n => {
         const g = document.createElement('p')
         
         a.classList.add('show')
+        const url = `url(${n.src})`
+        a.style.backgroundImage = url
         b.classList.add('div1')
         c.classList.add('div2')
         const value = n.nextElementSibling.innerText;
