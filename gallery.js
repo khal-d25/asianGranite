@@ -33,8 +33,8 @@ catimgs.forEach(n => {
         const b = document.createElement('div')
         const c = document.createElement('div')
         const d = document.createElement('h1')
-        const e = document.createElement('p')
-        const f = document.createElement('img')
+        const e = document.createElement('span')
+        
         const g = document.createElement('p')
         
         a.classList.add('show')
@@ -50,11 +50,11 @@ catimgs.forEach(n => {
         b.append(d)
         b.append(e)
         
-        f.src = n.src;
+       
         const i = names.indexOf(value)
         g.innerText = desc[i]
 
-        c.append(f)
+        
         c.append(g)
 
         a.append(b)

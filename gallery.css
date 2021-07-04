@@ -193,11 +193,23 @@ box-shadow: 1px 2px 3px var(--deep-color);
     #btt {
         display: flex;
     }
+
+    .div1 h1 {
+        font-size: 1.8rem;
+    }
+
+    
 }
 
 @media screen and (max-width:480px){
     .catlog{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .div1 h1 {
+        font-size: 1.5rem;
+    }
+    .div1 span {
+        font-size: 100%;
     }
     
 }
@@ -205,6 +217,7 @@ box-shadow: 1px 2px 3px var(--deep-color);
 
 
 .show {
+    padding: 20%;
     display: flex;
     position: fixed;
     flex-direction: column;
@@ -220,26 +233,26 @@ box-shadow: 1px 2px 3px var(--deep-color);
 
 }
 
-.div2 img {
-    width: 40%;
-    margin: 1rem;
-    border: 1px solid var(--contrast-color);
-    border-radius: 5%;
-    padding:2%;
-    background-color: whitesmoke;
+.thelink {
+    text-decoration: none;
+    color: var(--contrast-color);
 }
 
-.div2 p {
-    width: 20%;
-    height: 20%;
+.thelink:hover{
+    color: white;
 }
-    
+
+   
 
 
 
 .div1 h1 {
     display: inline;
     margin: 0;
+}
+
+.div1 span {
+    font-size: 200%;
 }
 
 .div1 , .div2{
@@ -255,10 +268,13 @@ box-shadow: 1px 2px 3px var(--deep-color);
 .div1 {
     justify-content: space-between;
     font-size: var(--big-font-size);
+    margin-top: 0;
+    margin-bottom: 6rem;
 }
 
 .div2 {
     justify-content: space-around;
+    border: 8px solid white;
 }
 
 .footer{
