@@ -304,6 +304,12 @@ html {
     font-size: var(--big-font-size);
     }
 
+    .logo {
+        width: 6rem;
+        height: 4rem;
+        margin: 0.8rem;
+     }
+
     #bannerpara{
     right: 5vw;
     top: 35vh;
