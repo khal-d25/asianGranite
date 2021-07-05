@@ -38,7 +38,7 @@ html {
     position: fixed;
     flex-direction: row;
     width:100%;
-    height: 10vh;
+    height: fit-content;
     justify-content: space-between;
     opacity: 90%;
     background-color:var(--main-color);
@@ -90,9 +90,10 @@ html {
 }
 
 .logo {
-   width: 5rem;
-   height: 5rem;
-}
+    width: 8rem;
+    height: 6rem;
+    margin: 1rem;
+ }
 
 .linkitem {
     margin: 1.75rem;
@@ -225,6 +226,8 @@ box-shadow: 1px 2px 3px var(--deep-color);
     align-items: center;
     top:0;
     left: 0;
+    background-size: 100%;
+    
     width: 100%;
     height: 100%;
     z-index: 1000;
