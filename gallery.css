@@ -186,7 +186,11 @@ box-shadow: 1px 2px 3px var(--deep-color);
         background-color: var(--main-color);
         border-radius: 0 0 0 38%;
     }
-
+    .logo {
+        width: 6rem;
+        height: 4rem;
+        margin: 0.8rem;
+     }
     #cross {
         display: flex;
     }
