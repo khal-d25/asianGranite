@@ -1,0 +1,9 @@
+<div class="form-group">
+    <span>https://</span>
+    <input class="form-field" type="text" placeholder="domain.tld">
+</div>
+
+<div class="form-group">
+    <input class="form-field" type="email" placeholder="Email">
+    <span>@gmail.com</span>
+</div>
